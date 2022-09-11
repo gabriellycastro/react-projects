@@ -1,0 +1,54 @@
+.home .page-configs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .page-configs p {
+    color: #f6f6f6;
+    margin: 30px;
+}
+
+.home .page-configs .label-color {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #f6f6f6;
+    border-radius: 5px;
+    text-align: center;
+    width: 150px;
+}
+
+.home .page-configs .label-color:hover {
+    opacity: 0.9;
+}
+
+.home .page-configs .label-color.btn-pink {
+    background-color: #E26177;
+}
+
+.home .page-configs .label-color.btn-blue {
+    background-color: #2A95FF;
+}
+
+.home .page-configs .label-color.btn-yellow {
+    background-color: #F1BD5A;
+}
+
+.home .page-configs .label-color.btn-green {
+    background-color: #27D178;
+}
+
+.home .page-configs .label-color label {
+    text-transform: capitalize;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.home .page-configs .label-color input[type='radio'] {
+    display: none;
+}

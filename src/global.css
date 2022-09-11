@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    background-color: #30335C;
+}
+
+.App {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.App header {
+    width: 250px;
+    padding-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.App header a {
+    min-width: 120px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #F6F6F6;
+    color: #3B3E67;
+}
+
+.App header a:hover {
+    opacity: 0.9;
+}
+
+.App header a i {
+    padding-right: 5px;
+}
+
+.App main {
+    width: calc(100% - 250px);
+    padding: 40px 20px;
+    background-color: #F6F6F6;
+    background-color: #3B3E67;
+}
+
+.App main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.App main section h1 {
+    color: #f6f6f6;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .App {
+        height: unset;
+        flex-direction: column;
+    }
+
+    .App header,
+    .App main {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .App header {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
