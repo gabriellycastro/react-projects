@@ -1,0 +1,50 @@
+.like-dislike p {
+    color: #F6F6F6;
+    margin: 50px 0 30px;
+    text-align: center;
+}
+
+.like-dislike .group-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.like-dislike .like-button:before {
+    content: '👍🏼'
+}
+
+.like-dislike .dislike-button:before {
+    content: '👎🏼'
+}
+
+.like-dislike .like-button, .like-dislike .dislike-button {
+    font-size: 1rem;
+    padding: 5px 10px;
+    background: #F6F6F6;
+    color: #3B3E67;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    min-height: 45px;
+    min-width: 112px;
+}
+
+.like-dislike .liked, .like-dislike .disliked {
+    color: #F6F6F6;
+    font-weight: bold;
+}
+
+.like-dislike .liked {
+    background: #198754;
+}
+
+.like-dislike .disliked {
+    background: #dc3545;
+}
+
+@media (max-width: 425px) {
+    .like-dislike .group-buttons {
+        width: 85%;
+    }
+}
